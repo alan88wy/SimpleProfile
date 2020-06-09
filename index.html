@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+#navbar {
+  width: 100%;
+  background-color: rgb(171, 22, 40);
+}
+
+ul {
+  width: 99vw;
+}
+
+li {
+  list-style: none;
+  float: right;
+  width: 8rem;
+  height: 4rem;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#welcome-section {
+  width: 100vw;
+  height: 100vh;
+  // width: 100%;
+  // height: 100%;
+  background-color: rgb(59, 56, 48);
+}
+
+#welcome-section > h1 {
+  color: white;
+  font-size: 3rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+#welcome-section > h3 {
+  color: red;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+#title {
+  font-size: 1rem;
+  text-align: center;
+  background-color: hsl(0deg, 0%, 92%);
+  max-width: 200px;
+  height: 9%;
+  width: 100%;
+  max-width: 20rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#title>p{
+  font-size: 1.1rem;
+}
+
+img {
+   display: block;
+   margin: auto;
+   max-width: 20rem;
+}
+
+#img-caption {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#projects-header {
+  border: 1px solid rgb(50, 76, 117);
+   background-color: rgb(50, 76, 117);
+}
+
+#projects-header > h1 {
+  color: white;
+  text-align: center;
+  border: 1px;
+  margin: 0px;
+  padding-top: 80px;
+}
+
+#projects-header > hr {
+  border-size: 1px;
+  margin-bottom: 40px;
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+  color: white;
+}
+
+#projects {
+  max-width: 100vw;
+  // max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 76, 117);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-tile {
+    max-width: 20rem;
+    max-height: 22rem;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+   background-color: rgb(50, 76, 117);
+}
+
+.project-tile a {
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #projects {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .project-tile {
+      margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #projects {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .project-tile {
+      max-width: 20rem;
+      margin: 0 auto;
+    }
+}
+
+
+
+
+</style>
+<body>
+
+<div>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a href="#welcome-section" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li>
+          <a id="profile-link" href="https://codepen.io/alan88w" target="_blank">Profile</a>
+        </li>
+      </ul>
+    </nav>
+  <div id="welcome-section">
+    <h1>Hey I am Alan</h1>
+    <h3>a web developer</h3>
+  </div>
+  <div>
+
+  <div id="projects-header">
+     <h1>These are some of my projects</h1>
+      <hr>
+  </div>
+  <div id="projects">
+    <div class="project-tile">
+      <div id="title">
+        <h1>Dr. Norman Borlaug</h1>
+        <p>The man who saved a billion lives</p>
+          <img id="image" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" />
+          <a href="https://codepen.io/alan88w/pen/VwvMgWr">Tribute Page</a>
+      </div>
+    </div>
+
+    <div class="project-tile">
+      <div id="title">
+        <h1>Dr. Norman Borlaug</h1>
+        <p>The man who saved a billion lives</p>
+          <img id="image" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" />
+          <a href="https://codepen.io/alan88w/pen/VwvMgWr">Tribute Page</a>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
